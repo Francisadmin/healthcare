@@ -1,0 +1,83 @@
+.navbar navbar-expand-lg {
+    background-color: aqua !important;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.icn {
+    font-size: 2rem;
+    padding-right: 20px;
+}
+
+
+.hta span {
+    color: orange;
+
+}
+
+.services {
+    text-align: center;
+}
+.services span:hover{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: ease;
+
+}
+
+.container-fluid-pics {
+    background: url(images/slide1.jpg);
+    background-attachment: fixed;
+
+}
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, .1) !important;
+    color: #fff !important;
+
+}
+
+.container-fluid-cso {
+    background-color: orangered;
+
+}
+
+.container-fluid-cso span:hover {
+    background-color: blue;
+    padding: 20px 20px;
+    border-radius: 30px;
+    transition: ease;
+    cursor: pointer;
+
+
+}
+.display1{
+    display: flex;
+    justify-content: space-around;
+    color: orangered;
+    font-size: 5px;
+    
+}
+.display2{
+    display: flex;
+    justify-content: space-around;
+    font-size: 5px;
+    
+}
+.video-sec{
+    background: url(images/clean-empty-hospital-ward-ready-receive-patients-reflecting-modern-medical-care.jpg);
+    background-attachment: fixed;
+}
+.video-sec span:hover{
+    background-color: orangered;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: 1s ease;
+    cursor: pointer;
+
+}

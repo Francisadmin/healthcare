@@ -1,0 +1,23 @@
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/slide2.jpg);
+    height: 50vh;
+    padding: 30px 30px;
+    background-attachment: fixed;
+
+}
+h2{
+    width: 350px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: gray;
+    opacity: .5;
+    color: #fff;
+}
+.background p{
+    font-size: 1.5rem;
+}
+.background h2 a{
+    text-decoration: none;
+    color: #fff;
+    
+}
