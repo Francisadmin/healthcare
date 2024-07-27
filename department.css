@@ -83,4 +83,8 @@ a:hover {
     border-radius: 30px !important;
     box-shadow: 2px 2px 7px black;
 }
+.footer{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: #fff ;
+}
 
