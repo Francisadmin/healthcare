@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEALTH +</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <div class="pic">
+    <div class="pic m-3">
         <img src="images/healthcare.png" alt="">
 
     </div>
     <!--navbar starts-->
-    <nav class="navbar navbar-expand-lg text-white mx-auto">
+    <nav class="navbar navbar-expand-lg text-white mx-auto sticky-top">
 
         <div class="container-fluid text-white py-2">
             <a class="navbar-brand" href="#"></a>
@@ -36,7 +40,7 @@
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="aboutus.html">ABOUT US</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -44,11 +48,11 @@
                             OUR SERVICES
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">DEPARTMENTS</a></li>
+                            <li><a class="dropdown-item  text-dark" href="department.html">DEPARTMENTS</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">SERVICES</a></li>
+                            <li><a class="dropdown-item  text-dark" href="services.html">SERVICES</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -63,20 +67,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">CONTACT</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else</a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <button class="btn btn-primary mx-auto p-3">BOOK AN APPOINTMENT</button>
             </div>
@@ -84,8 +74,55 @@
     </nav>
     <!---navbar ends-->
 
+    <nav class="navbar navbar-dark  st">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!---hero section starts -->
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel ">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -96,27 +133,27 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/2149611193.jpg" class="d-block w-100" alt="..." data-bs-interval="2000">
+                <img src="images/1-1.jpg" class="d-block w-100" alt="..." data-bs-interval="2000">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
+                    <h5 class=" position-absolute text-start text-white w-50 bg-primary">First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/slide1.jpg" class="d-block w-100" alt="..." data-bs-interval="2000">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/slide2 (1).jpg" class="d-block w-100" alt="..." data-bs-interval="2000">
+                <div class="carousel-caption d-none d-md-block fw-light position-absolute text-start text-white w-50">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <img src="images/portrait-nurse-scrubs-clinic.jpg" class="d-block w-100" alt="..."
                     data-bs-interval="2000">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -134,7 +171,7 @@
     <!----schedule starts--->
     <section class="time mb-5">
         <div class="container">
-            <div class="row bg-primary text-white p-3">
+            <div class=" times row bg-primary text-white p-3">
                 <div class="col-md-6 col-sm-12 mb-5">
                     <div class="display">
                         <div class="icn">
@@ -144,7 +181,8 @@
                             <h3>Need a Doctor for Check-Up?</h3>
                             <h2>JUST MAKE AN APPOINTMENT</h2>
                             <br><br>
-                            <p>GET AN APPOINTMENT</p>
+                            <button type="button" class="btn btn-outline-light py-2 px-4"
+                                style="border-radius: 30px !important;">GET AN APPOINTMENT</button>
                         </div>
                     </div>
                 </div>
@@ -158,7 +196,7 @@
                             <h3> OPENNING HOURS</h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
-                                    <p>Saturday-Sunday</p>
+                                    <p>Monday-Friday</p>
 
                                 </div>
                                 <div class="col-md-4 col-sm-12">
@@ -176,7 +214,7 @@
 
                                 </div>
                                 <div class="col-md-4 col-sm-12">
-                                    <hr> 
+                                    <hr>
                                 </div>
                                 <div class="col-md-4 col-sm-12">
                                     <p>8:00am-10:00pm</p>
@@ -184,8 +222,8 @@
                                 </div>
 
                             </div>
-               
-                          
+
+
                         </div>
                     </div>
                 </div>
@@ -209,7 +247,7 @@
     <section class="services mt-5 my-5">
         <div class="container">
             <div class="row ">
-                <div class="col-md-4 col-sm-12 bg-light">
+                <div class="col-md-4 col-sm-12" data-aos="zoom-in-up" data-aos-duration="1500">
                     <h1><i class="fa-solid fa-stethoscope text-primary my-5"></i></h1>
                     <h5 class="mb-5"> HealthCare Professionals</h5>
                     <h2><img src="images/pulse icon.jpeg" alt="" class="img-fluid my-5"></h2>
@@ -220,7 +258,7 @@
                     <h5><span>Learn more</span></h5>
 
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12" data-aos="zoom-in-up" data-aos-duration="1500">
                     <h1><i class="fa-solid fa-scale-balanced text-primary my-5"></i></h1>
                     <h5 class="mb-5">Medical Excellence</h5>
                     <h2><img src="images/pulse icon.jpeg" alt="" class="img-fluid my-5"></h2>
@@ -234,7 +272,7 @@
                     <h5><span>Learn more</span></h5>
 
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12" data-aos="zoom-in-up" data-aos-duration="1500">
                     <h1><i class="fa-solid fa-clipboard text-primary my-5"></i></h1>
                     <h5 class="mb-5">Latest Technologies</h5>
                     <h2><img src="images/pulse icon.jpeg" alt="" class="img-fluid my-5"></i></h2>
@@ -253,7 +291,7 @@
 
     <!---advantages section starts-->
     <div class="container-fluid-pics">
-        <div class="container text-dark p-5">
+        <div class="container text-white p-5">
             <div class="row mb-5">
                 <div class="col-md-12 text-center">
                     <h2 style="font-family: 'lato'; font-weight: 350;"> Our <span
@@ -314,7 +352,8 @@
                 <p class="lead">Egestas dolor erat vamus suscipit sed ipsum estduin vitae nised volutpat</p>
             </div>
             <div class="col-md-4 py-5">
-                <span>Purchase Now+</span>
+                <button type="button" class="btn btn-outline-light py-2 px-4"
+                    style="border-radius: 30px !important;">PURCHASE NOW+</button>
 
             </div>
 
@@ -327,13 +366,51 @@
     <section class="accordion my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5">
                     <h1 class="lead my-5" style="font-size: 30px;">Services We offer</h1>
                     <small>
                         Pellentesque vitae ultrice posuere. Praesent justo laoret dignis
                         lectus etiam ipsum habitant tristique nam est. Donec venentse
                         eu varius cursus masa metus adipiscing ante.
                     </small>
+                    <ul class="mt-3">
+                        <li>
+                            <h6><span style="color: orangered;"><i class="fa-solid fa-arrow-right-to-bracket px-2"></i>
+                                </span>Eye Care Solutions
+                            </h6>
+                        </li>
+                        <hr>
+                        <li>
+                            <h6><span style="color: orangered;"><i class="fa-solid fa-arrow-right-to-bracket px-2"></i>
+                                </span>Dental Surgery
+                            </h6>
+                        </li>
+                        <hr>
+                        <li>
+                            <h6><span style="color: orangered;"><i class="fa-solid fa-arrow-right-to-bracket px-2"></i>
+                                </span>Blood Tests And X-Rays
+                            </h6>
+                        </li>
+                        <hr>
+                        <li>
+                            <h6><span style="color: orangered;"><i class="fa-solid fa-arrow-right-to-bracket px-2"></i>
+                                </span>Health Care Problems
+                            </h6>
+                        </li>
+                        <hr>
+                        <li>
+                            <h6><span style="color: orangered;"><i class="fa-solid fa-arrow-right-to-bracket px-2"></i>
+                                </span>Medicies And Drug Store
+                            </h6>
+                        </li>
+                        <hr>
+                        <li>
+                            <h6><span style="color: orangered;"><i class="fa-solid fa-arrow-right-to-bracket px-2"></i>
+                                </span>General Prescriptions
+                            </h6>
+                        </li>
+                        <hr>
+                    </ul>
                 </div>
                 <div class="col-md-8">
                     <h1 class="lead my-5" style=" font-size: 30px;">Hospital Departments</h1>
@@ -516,17 +593,20 @@
     <section class="video-sec text-white p-5 my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 p-5">
+                <div class="col-md-6 col-12 p-5">
                     <h1 style="font-size: 38px; font-weight: 700px;">We Diagnose & Treat</h1>
-                    <h1 style="font-size: 28px; font-weight: 400px;" class="mb-4">Unique Problems in Our Research Center</h1>
-                    <small class="my-5" >Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non, mollis quis fringilla eros.
+                    <h1 style="font-size: 28px; font-weight: 400px;" class="mb-4">Unique Problems in Our Research Center
+                    </h1>
+                    <small class="my-5">Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non, mollis
+                        quis fringilla eros.
                         Praesent tempor molestie metus. Aliquam massa sapien. Aenean cursus mattis sapien. Integer
                         elementum nisi ac volutpat vestibulum enim.
                     </small> <br> <br>
-                    <span class=" my-5">Purchase Now+</span>
+                    <button type="button" class="btn btn-outline-light py-2 px-5"
+                        style="border-radius: 30px !important;">READ MORE</button>
 
                 </div>
-                <div class="col-md-6 p-5">
+                <div class="col-md-6  col-12 p-5">
                     <img src="images/video.png" alt="" class="img-fluid">
 
                 </div>
@@ -536,15 +616,14 @@
         </div>
 
     </section>
-    <!---- video-->
+    <!---- video ends-->
 
     <!------>
     <section class="offer my-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="lead">We Offer <br><b>Fast & Reliable</b><br> <b><span
-                                class="text-warning"> Medical &
+                    <h1 class="lead">We Offer <br><b>Fast & Reliable</b><br> <b><span class="text-warning"> Medical &
                                 Healthcare <br>
                                 Solution to Our Patients</span></b>
                     </h1>
@@ -574,60 +653,53 @@
             <small class="lead">puru sapien consequent vitae sagittus ut facilisis arcu</small> <br>
             <img src="images/pulse icon.jpeg" alt="" class="my-5">
             <div class="row text-start">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in-left" data-aos-duration="1500">
                     <img src="images/patient receiving treatment.jpeg" alt="" class="img-fluid">
                     <h5>utolestie sapien vitae malesuada</h5>
                     <small>Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo laoreet dignissim
                         lectus etiam ipsum habitant tristique
                     </small>
                     <hr>
+                    <div style="display: flex; justify-content: space-between; color: orangered;">
+                        <small><i class="fa-solid fa-user"></i>BY ADMIN</small>
+                        <small><i class="fa-solid fa-calendar-days"></i>FEBRUARY 8TH, 2017 </small>
+                    </div>
                 </div>
-                <div class="col-md-4 text-start">
+                <div class="col-md-4 text-start" data-aos="fade-right" data-aos-duration="1500">
                     <img src="images/three doctors.jpeg" alt="" class="img-fluid">
                     <h5>utolestie sapien vitae malesuada</h5>
                     <small>Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo laoreet dignissim
                         lectus etiam ipsum habitant tristique
                     </small>
                     <hr>
-
+                    <div style="display: flex; justify-content: space-between; color: orangered;">
+                        <small><i class="fa-solid fa-user"></i>BY ADMIN</small>
+                        <small><i class="fa-solid fa-calendar-days"></i>FEBRUARY 8TH, 2017 </small>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/patient receiving treatment.jpeg" alt="" class="img-fluid">
+                <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="images/patient receiving treatment.jpeg" alt="" class="img-fluid" data-aos="zoom-in-left"
+                        data-aos-duration="1500">
                     <h5>utolestie sapien vitae malesuada</h5>
                     <small>Sed posuere nunc libero pellentesque vitae ultrices posuere. Praesent justo laoreet dignissim
                         lectus etiam ipsum habitant tristique
                     </small>
                     <hr>
-                    <div class="display1">
-                        <div class="display2">
-                            <div class="icn1">
-                                <i class="fa-solid fa-user"></i>
-
-                            </div>
-                            <div class="ctn1">
-                                <h6>BY ADMIN</h6>
-
-                            </div>
-
-                        </div>
-                        <div class="display2">
-                            <div class="icn1">
-                                <i class="fa-solid fa-calendar-days"></i>
-                            </div>
-                            <div class="ctn1">
-                                <h6>BY ADMIN</h6>
-
-                            </div>
-
-                        </div>
-
-
-
+                    <div style="display: flex; justify-content: space-between; color: orangered;">
+                        <small><i class="fa-solid fa-user"></i>BY ADMIN</small>
+                        <small><i class="fa-solid fa-calendar-days"></i>FEBRUARY 8TH, 2017 </small>
                     </div>
-
                 </div>
-
             </div>
+        </div>
+
+
+
+        </div>
+
+        </div>
+
+        </div>
 
 
 
@@ -648,17 +720,215 @@
     <!------hover sections ends-->
 
     <!---------->
-    <section class="our Patients">
+    <section class="our Patients my-5">
         <div class="container text-center">
             <h1 class="lead">What Our <span style="font-weight: bold;">Patients Are Saying</span></h1>
             <small class="lead">Purus sapien consequat vitae sagittis ut facilisis arcu</small> <br>
-            <img src="images/pulse icon.jpeg" alt="" class="my-5">
+            <img src="images/pulse icon.jpeg" alt="" class="my-4">
+            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam incidunt iure
+                molestiae. Totam eveniet quis eum perspiciatis magni, animi atque laborum quas, iste, quasi ullam
+                numquam officiis libero maxime.
+            </p>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/tes.png" class="d-block w-10 mx-auto" alt="..." data-bs-interval="2000">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/tes.png" class="d-block w-10 mx-auto" alt="..." data-bs-interval="2000">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/tes.png " class="d-block w-10 mx-auto" alt="..." data-bs-interval="2000">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
 
     </section>
 
     <!---------->
+    <div class="container-fluid" style="background-color: orange !important; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="row my-5">
+                        <div class="col-md-3 col-3 mt-3">
+                            <span class="bg-primary rounded-circle p-3" style="font-size: 1.5rem;"><i
+                                    class="fa-solid fa-hospital"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                            <h1 class="lead" style="font-size: 2.5rem; font-weight: bold;"><span class="number">
+                                    126</span></h1>
+                            <h4>Hospital</h4>
 
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="row my-5">
+                        <div class="col-md-3 col-3 mt-3">
+                            <span class="bg-primary rounded-circle p-3" style="font-size: 1.5rem;"><i
+                                    class="fa-solid fa-stethoscope"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                            <h1 class="lead" style="font-size: 2.5rem; font-weight: bold;"><span
+                                    class="number">126</span></h1>
+                            <h4>Qualified Staff</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="row my-5">
+                        <div class="col-md-3 col-3 mt-3">
+                            <span class="bg-primary rounded-circle p-3" style="font-size: 1.5rem;"><i
+                                    class="fa-solid fa-heart-pulse"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                            <h1 class="lead " style="font-size: 2.5rem; font-weight: bold;"><span
+                                    class="number">6,200</span></h1>
+                            <h4>Satisfied Patients</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="row my-5">
+                        <div class="col-md-3 col-3 mt-3">
+                            <span class="bg-primary rounded-circle p-3" style="font-size: 1.5rem;"><i
+                                    class="fa-solid fa-shield-halved"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9 col-9 text-left">
+                            <h1 class="lead" style="font-size: 2.5rem; font-weight: bold;"><span
+                                    class="number">126</span></h1>
+                            <h4>Doctors Medals</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--------->
+
+    <!-----footer sectiont start--->
+    <section class="footer bg-dark">
+        <!-----image in footer starts-->
+        <div class="container-fluid bg-dark">
+            <a href=""><img src="images/fot21356.jpg" alt="" class="pic img-fluid my-3"></a>
+        </div>
+        <!------image in foooter ends-->
+
+        <div class="container-fluid text-white p-md-5 p-sm-3">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <h6>Medical Care</h6>
+                    <img src="images/decor-brand.png" alt="">
+                    <ul class="p-0 my-3">
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="services.html">About Services</a></li>
+                        <li><a href="department.html">About Departments</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-auto col-sm-12 my-5">
+                    <ul class="p-0">
+                        <li><a href="">Cancer Oncology</a></li>
+                        <li><a href="">Dental Surgery</a></li>
+                        <li><a href="">Diagnose & Research</a></li>
+                        <li><a href="">Drug / Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-12">
+                    <h6>The Services</h6>
+                    <img src="images/decor-brand.png" alt="">
+                    <ul class="p-0 my-3">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Services</a></li>
+                        <li><a href="">About Departments</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-12 my-5">
+                    <ul class="p-0">
+                        <li><a href="">Cancer Oncology</a></li>
+                        <li><a href="">Dental Surgery</a></li>
+                        <li><a href="">Diagnose & Research</a></li>
+                        <li><a href="">Drug / Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-12">
+                    <h6>The Services</h6>
+                    <img src="images/decor-brand.png" alt="">
+                    <ul class="p-0 my-3">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">About Services</a></li>
+                        <li><a href="">About Departments</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto col-sm-12 my-5">
+                    <ul class="p-0">
+                        <li><a href="">Cancer Oncology</a></li>
+                        <li><a href="">Dental Surgery</a></li>
+                        <li><a href="">Diagnose & Research</a></li>
+                        <li><a href="">Drug / Medicine</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <di class="container text-white text-center">
+            <p>(C) Copyright 2024 - Medical Theme.All right</p>
+            <p>Designed by <span style="color: yellow;"><em><b>Francis</b></em></span></p>
+
+            </div>
+
+
+
+    </section>
+    <!----footer section end---->
+
+    <!----counter starts------>
+    <script>
+        $(".number").counterUp({ time: 3000 });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 

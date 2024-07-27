@@ -1,6 +1,9 @@
 .navbar navbar-expand-lg {
     background-color: aqua !important;
 }
+.times{
+    border-bottom: 10px solid orangered !important;
+}
 
 .display {
     display: flex;
@@ -22,24 +25,22 @@
 .services {
     text-align: center;
 }
-.services span:hover{
+.services span{
     background-color: orange;
     padding: 10px 20px;
     border-radius: 30px;
-    transition: ease;
-
+    cursor: pointer;
 }
 
 .container-fluid-pics {
-    background: url(images/slide1.jpg);
+    background: url(images/close-up-african-american-hand-holding-stethoscope\ \(1\).jpg);
     background-attachment: fixed;
 
 }
 
 .container-fluid {
-    background-color: rgba(0, 0, 0, .1) !important;
+    background-color: rgba(73, 73, 73, .5) !important;
     color: #fff !important;
-
 }
 
 .container-fluid-cso {
@@ -53,8 +54,6 @@
     border-radius: 30px;
     transition: ease;
     cursor: pointer;
-
-
 }
 .display1{
     display: flex;
@@ -80,4 +79,16 @@
     transition: 1s ease;
     cursor: pointer;
 
+}
+ul li a{
+    color: #fff !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    
+}
+li{
+    list-style: none !important;
+}
+a:hover{
+    color: orangered !important;
 }

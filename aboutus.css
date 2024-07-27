@@ -1,0 +1,135 @@
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/slide2.jpg) !important;
+    height: 50vh;
+    padding: 30px 30px;
+    background-attachment: fixed !important;
+    border-bottom: 5px solid rgb(35, 189, 240) !important;
+}
+.background h2{
+    width: 200px !important;
+    border-radius: 80px !important;
+    background-color: rgba(73, 73, 73, 0.9);
+    opacity: .5;
+    color: #fff !important; 
+}
+.background h2 a{
+    text-decoration: none;
+    color: #fff !important;
+    
+}
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.overlay p {
+    margin: 0 0 10px;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.row span a {
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 1.5rem !important;
+}
+
+.img-containers {
+    position: relative;
+}
+
+.img-containers .img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-containers .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.img-containers .overlay-content {
+    text-align: center;
+}
+.img-containers .overlay p {
+    margin: 0 0 10px;
+}
+.img-containers:hover .overlay {
+    opacity: 1;
+}
+ul li a{
+    color: #fff !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    
+}
+li{
+    list-style: none !important;
+}
+.carousel caption h5{
+    left: 20% !important;
+    position: absolute !important;
+    top: 50% !important;
+}
+span a:hover{
+    color: orangered !important;;
+}
+a:hover{
+    color: orangered !important;
+}
+.brand{
+    color: red !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.container-fluid {
+    background-color: rgba(0, 0, 0, .1) !important;
+    color: #fff !important;
+}
+.nav-link {
+    color: #fff !important;
+    font-weight: bold !important;
+}
