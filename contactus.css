@@ -58,4 +58,11 @@ a:hover {
     background-color: rgba(73, 73, 73, .5) !important;
     color: #fff !important;
 }
-
+input[type="text"]{
+    height: 50px;
+    width: 100% !important;
+    background-color: whitesmoke !important;
+}
+image input[name ="text"]{
+    width: 10rem !important;
+}

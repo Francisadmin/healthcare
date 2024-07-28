@@ -26,7 +26,15 @@
     text-align: center;
 }
 .services span{
-    background-color: orange;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.services span:hover{
+    border: 1px solid orangered;
+    color: #fff;
+    background-color: orangered;
     padding: 10px 20px;
     border-radius: 30px;
     cursor: pointer;
@@ -95,4 +103,41 @@ a:hover{
 .footer{
     background-color: rgba(0, 0, 0, 0.5) !important;
     color: #fff ;
+}
+.carousel-caption h1{
+    padding: 20px;
+    position: absolute;
+    text-align: start;
+    color: #fff;
+    background-color: blue;  
+    bottom: 16rem; 
+    font-weight: lighter; 
+    text-align: start;
+}
+.carousel-caption h2{
+    padding: 20px;
+    position: absolute;
+    text-align: start;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);  
+    bottom: 11rem;
+    font-weight: lighter;  
+}
+.carousel-caption h5{
+    padding: 20px;
+    position: absolute;
+    text-align: start;
+    color: #fff;
+    background-color: rgba(73, 73, 73, .5);  
+    bottom: 6.7rem;
+    font-weight: lighter;  
+}
+.carousel-caption H6{
+    padding: 15px;
+    position: absolute;
+    text-align: start;
+    color: #fff;
+    border-radius: 40px;
+    background-color: orangered; 
+    bottom: 2rem;  
 }
