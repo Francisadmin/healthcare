@@ -1,0 +1,45 @@
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/slide2.jpg) !important;
+    height: 50vh;
+    padding: 30px 30px;
+    background-attachment: fixed !important;
+    border-bottom: 5px solid rgb(35, 189, 240) !important;
+}
+.background h2{
+    width: 250px !important;
+    border-radius: 80px !important;
+    background-color: rgba(73, 73, 73, 0.9);
+    opacity: .5;
+    color: #fff !important; 
+}
+.background h2 a{
+    text-decoration: none;
+    color: #fff !important;
+    
+}
+.footer ul li a {
+    color: #fff !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+
+}
+
+.footer li {
+    list-style: none !important;
+}
+
+.footer a:hover {
+    color: orangered !important;
+}
+.container-fluid {
+    background-color: rgba(73, 73, 73, .5) !important;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+a:hover{
+    color: orangered !important;
+}
