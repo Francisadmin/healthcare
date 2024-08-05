@@ -2,7 +2,7 @@ const myMeals = document.getElementById('new');
 const myImg = document.getElementById('img');
 const mySeafood = document.getElementById('new-con');
 
-fetch('https://newsapi.org/v2/top-headlines?country=ng&apiKey=8d3cf181172d427cb88348f179b61817')
+fetch('https://newsapi.org/v2/everything?q=nigeria&pageSize=20&apiKey=8d3cf181172d427cb88348f179b61817')
     .then(function (response) {
         return response.json();
     })
@@ -12,7 +12,7 @@ fetch('https://newsapi.org/v2/top-headlines?country=ng&apiKey=8d3cf181172d427cb8
         if (data.articles.length > 0) {
             // Display the first image
             if (data.articles[0].urlToImage) {
-                myImg.src = data.articles[0].urlToImage;
+                
             } else {
                 myImg.alt = "No image available";
             }
